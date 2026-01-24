@@ -1,3 +1,4 @@
+from pathlib import Path
 from textual.app import ComposeResult
 from textual.containers import Container, Horizontal
 from textual.widgets import Button, Static, DataTable, Input, Label
@@ -15,53 +16,7 @@ from uvtui.widgets.status_bar import StatusBar
 
 
 class PythonScreen(Container):
-    DEFAULT_CSS = """
-    PythonScreen {
-        border: solid $primary;
-        margin: 1;
-        padding: 1;
-    }
-    
-    .panel-title {
-        background: $primary;
-        color: $text;
-        padding: 1;
-        text-align: center;
-        text-style: bold;
-    }
-    
-    Horizontal {
-        height: auto;
-        align: center middle;
-        margin: 1 0;
-    }
-    
-    Button {
-        margin: 0 1;
-    }
-    
-    Input {
-        margin: 0 1;
-        width: 30;
-    }
-    
-    DataTable {
-        height: 12;
-        margin: 1 0;
-    }
-    
-    #python_output {
-        margin-top: 1;
-        height: auto;
-        color: $text-muted;
-        min-height: 3;
-    }
-    
-    .section-label {
-        margin: 1 0;
-        text-style: bold;
-    }
-    """
+    CSS_PATH = Path(__file__).parent.parent / "styles" / "python_screen.tcss"
 
     def compose(self) -> ComposeResult:
         yield Static("Python Version Management", classes="panel-title")

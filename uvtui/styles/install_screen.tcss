@@ -1,0 +1,29 @@
+InstallScreen {
+    height: 100%;
+    padding: 1 2;
+}
+
+.panel-title {
+    background: $primary;
+    color: $text;
+    padding: 1;
+    text-align: center;
+    text-style: bold;
+    margin-bottom: 1;
+}
+
+.info-text {
+    margin: 1 0;
+}
+
+.install-button {
+    margin: 2 0;
+}
+
+#install_output {
+    margin-top: 1;
+    padding: 1;
+    background: $panel;
+    border: solid $primary-darken-1;
+    min-height: 5;
+}

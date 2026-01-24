@@ -3,13 +3,6 @@ from uvtui.utils.uv_commands import check_uv_installed
 
 
 class UVChecker(Static):
-    DEFAULT_CSS = """
-    UVChecker {
-        background: $panel;
-        padding: 1;
-        text-align: center;
-    }
-    """
 
     def __init__(self) -> None:
         super().__init__()

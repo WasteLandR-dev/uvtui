@@ -2,15 +2,6 @@ from textual.widgets import Static
 
 
 class StatusBar(Static):
-    DEFAULT_CSS = """
-    StatusBar {
-        dock: bottom;
-        background: $primary-darken-2;
-        color: $text;
-        padding: 0 1;
-        height: 1;
-    }
-    """
 
     def __init__(self) -> None:
         super().__init__()

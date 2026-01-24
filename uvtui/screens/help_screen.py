@@ -1,29 +1,11 @@
+from pathlib import Path
 from textual.app import ComposeResult
 from textual.containers import Container, VerticalScroll
 from textual.widgets import Static, Markdown
 
 
 class HelpScreen(Container):
-    DEFAULT_CSS = """
-    HelpScreen {
-        border: solid $primary;
-        margin: 1;
-        padding: 1;
-    }
-    
-    .panel-title {
-        background: $primary;
-        color: $text;
-        padding: 1;
-        text-align: center;
-        text-style: bold;
-    }
-    
-    VerticalScroll {
-        height: 100%;
-        margin: 1 0;
-    }
-    """
+    CSS_PATH = Path(__file__).parent.parent / "styles" / "help_screen.tcss"
 
     HELP_TEXT = """
 # uvtui - UV Package Manager TUI

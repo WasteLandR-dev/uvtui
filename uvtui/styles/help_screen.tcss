@@ -1,0 +1,17 @@
+HelpScreen {
+    height: 100%;
+    padding: 1 2;
+}
+
+.panel-title {
+    background: $primary;
+    color: $text;
+    padding: 1;
+    text-align: center;
+    text-style: bold;
+    margin-bottom: 1;
+}
+
+HelpScreen Markdown {
+    margin: 1 0;
+}

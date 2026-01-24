@@ -1,3 +1,4 @@
+from pathlib import Path
 from textual.app import App, ComposeResult
 from textual.binding import Binding
 from textual.widgets import Header, Footer, TabbedContent, TabPane
@@ -10,19 +11,7 @@ from uvtui.screens.help_screen import HelpScreen
 
 
 class UVTUIApp(App):
-    CSS = """
-        Screen {
-            background: $surface;
-        }
-        
-        TabbedContent {
-            margin: 1 0;
-        }
-        
-        TabPane {
-            padding: 0;
-        }
-    """
+    CSS_PATH = Path(__file__).parent / "styles" / "app.tcss"
 
     BINDINGS = [
         Binding("q", "quit", "Quit", priority=True),

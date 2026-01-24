@@ -1,0 +1,68 @@
+PythonScreen {
+    height: 100%;
+    padding: 0;
+}
+
+.panel-title {
+    background: $primary;
+    color: $text;
+    padding: 1;
+    text-align: center;
+    text-style: bold;
+}
+
+.controls-section {
+    background: $panel;
+    padding: 1 2;
+    border-bottom: solid $primary-darken-1;
+}
+
+.button-row {
+    height: auto;
+    align: left middle;
+    margin: 1 0;
+}
+
+.input-row {
+    height: auto;
+    align: left middle;
+    margin: 1 0;
+}
+
+PythonScreen Button {
+    margin: 0 1 0 0;
+    min-width: 16;
+}
+
+PythonScreen Input {
+    width: 35;
+    margin-right: 1;
+}
+
+.table-container {
+    height: 1fr;
+    padding: 1 2;
+}
+
+PythonScreen DataTable {
+    height: 100%;
+}
+
+.output-container {
+    height: auto;
+    max-height: 8;
+    padding: 1 2;
+    background: $panel;
+    border-top: solid $primary-darken-1;
+}
+
+#python_output {
+    height: auto;
+    color: $text-muted;
+}
+
+.section-label {
+    margin: 1 0 0 0;
+    text-style: bold;
+    color: $text;
+}
